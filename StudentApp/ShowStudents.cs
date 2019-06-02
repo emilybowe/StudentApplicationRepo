@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace StudentApp
 {
-    public partial class Login : Form
+    public partial class ShowStudents : Form
     {
-        public Login()
+        public ShowStudents()
         {
             InitializeComponent();
-        }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
