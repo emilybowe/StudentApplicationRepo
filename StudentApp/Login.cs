@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAL;
 
 namespace StudentApp
 {
@@ -16,13 +17,64 @@ namespace StudentApp
         {
             InitializeComponent();
         }
+        CheckLogin c = new CheckLogin();
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void BtnLogin_Click(object sender, EventArgs e)
         {
+            string user = txtUser.Text;
+            string pass = txtPass.Text;
+            bool status = c.CheckUser(user, pass);
+            if (!status)
+            {
+                MessageBox.Show("Invalid Login");
+            }
+            else
+            {
 
+                
+                //show grid of all students before getting menu choice
+                ShowStudents ss = new ShowStudents();
+                ss.Show();
+            }
+            txtUser.Clear();
+            txtPass.Clear();
         }
 
-        private void Label1_Click(object sender, EventArgs e)
+
+
+        private void LogOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void LoginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            lblUser.Show();
+            txtUser.Show();
+            lblPass.Show();
+            txtPass.Show();
+            btnLogin.Show();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //ignore
+        private void AccountToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
