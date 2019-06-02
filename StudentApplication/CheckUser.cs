@@ -3,10 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DAL;
 
-namespace StudentApplication
+namespace BIZ
 {
-    class CheckUser
+    public class CheckUser
     {
+        public bool VerifyUser(string user, string pass)
+        {
+            CheckLogin c = new CheckLogin();    // check for a match
+            bool status = c.CheckUser(user, pass);
+
+            return status;
+        }
     }
 }
