@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    class Program
+    class DAO
     {
         static void Main(string[] args)
         {
