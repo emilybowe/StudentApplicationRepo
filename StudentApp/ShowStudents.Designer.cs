@@ -76,13 +76,13 @@
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(139, 26);
             this.logoutToolStripMenuItem.Text = "Logout";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(139, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // accountToolStripMenuItem
@@ -101,6 +101,7 @@
             this.newStudentToolStripMenuItem.Name = "newStudentToolStripMenuItem";
             this.newStudentToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
             this.newStudentToolStripMenuItem.Text = "New Student";
+            this.newStudentToolStripMenuItem.Click += new System.EventHandler(this.NewStudentToolStripMenuItem_Click);
             // 
             // editStudentToolStripMenuItem
             // 

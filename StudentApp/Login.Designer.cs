@@ -112,14 +112,14 @@
             // loginToolStripMenuItem
             // 
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
             this.loginToolStripMenuItem.Text = "Login";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.LoginToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // accountToolStripMenuItem
@@ -147,6 +147,7 @@
             this.newStudentToolStripMenuItem.Name = "newStudentToolStripMenuItem";
             this.newStudentToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
             this.newStudentToolStripMenuItem.Text = "New Student";
+            this.newStudentToolStripMenuItem.Click += new System.EventHandler(this.NewStudentToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 

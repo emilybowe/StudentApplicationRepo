@@ -47,5 +47,11 @@ namespace StudentApp
             dgvStudents.DataSource = sd.Read();
 
         }
+
+        private void NewStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddStudent addStu = new StudentApp.AddStudent();
+            addStu.Show();
+        }
     }
 }

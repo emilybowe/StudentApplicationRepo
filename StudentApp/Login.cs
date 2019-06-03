@@ -57,15 +57,13 @@ namespace StudentApp
         }
 
 
+                                     
 
-
-
-
-
-
-
-
-
+        private void NewStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddStudent addStu = new AddStudent();
+            addStu.Show();
+        }
 
 
 
