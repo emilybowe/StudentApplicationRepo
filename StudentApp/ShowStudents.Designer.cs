@@ -28,29 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvStudents = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.accountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.accountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewDatabaseHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvStudents
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(31, 164);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(744, 259);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStudents.Location = new System.Drawing.Point(31, 164);
+            this.dgvStudents.Name = "dgvStudents";
+            this.dgvStudents.RowHeadersWidth = 51;
+            this.dgvStudents.RowTemplate.Height = 24;
+            this.dgvStudents.Size = new System.Drawing.Size(744, 259);
+            this.dgvStudents.TabIndex = 0;
             // 
             // menuStrip1
             // 
@@ -73,17 +73,6 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
-            // accountToolStripMenuItem
-            // 
-            this.accountToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newStudentToolStripMenuItem,
-            this.editStudentToolStripMenuItem,
-            this.deleteStudentToolStripMenuItem,
-            this.viewDatabaseHistoryToolStripMenuItem});
-            this.accountToolStripMenuItem.Name = "accountToolStripMenuItem";
-            this.accountToolStripMenuItem.Size = new System.Drawing.Size(77, 24);
-            this.accountToolStripMenuItem.Text = "Account";
-            // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
@@ -95,6 +84,17 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exitToolStripMenuItem.Text = "Exit";
+            // 
+            // accountToolStripMenuItem
+            // 
+            this.accountToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newStudentToolStripMenuItem,
+            this.editStudentToolStripMenuItem,
+            this.deleteStudentToolStripMenuItem,
+            this.viewDatabaseHistoryToolStripMenuItem});
+            this.accountToolStripMenuItem.Name = "accountToolStripMenuItem";
+            this.accountToolStripMenuItem.Size = new System.Drawing.Size(77, 24);
+            this.accountToolStripMenuItem.Text = "Account";
             // 
             // newStudentToolStripMenuItem
             // 
@@ -125,12 +125,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvStudents);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "ShowStudents";
             this.Text = "ShowStudents";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.ShowStudents_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -140,7 +141,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvStudents;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
