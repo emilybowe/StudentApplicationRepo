@@ -37,7 +37,7 @@ namespace BIZ
 
         public void AddStudentToDB()
         {
-
+            AddNewStudent(FirstName, Surname, Email, Phone, AddressLine1, AddressLine2, City, County, Level, Course);
 
         }
     }
