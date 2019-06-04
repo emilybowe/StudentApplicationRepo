@@ -40,5 +40,11 @@ namespace BIZ
             AddNewStudent(FirstName, Surname, Email, Phone, AddressLine1, AddressLine2, City, County, Level, Course);
 
         }
+
+        public void UpdateStudentInDB(string id)
+        {
+            UpdateData upd = new UpdateData();
+            upd.UpdateStudent(id, FirstName, Surname, Email, Phone, AddressLine1, AddressLine2, City, County, Level, Course);
+        }
     }
 }
