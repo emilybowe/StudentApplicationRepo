@@ -8,6 +8,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{820ECA8C-EE8A-40CB-B69B-382C825BFCFD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentApp", "StudentApp\StudentApp.csproj", "{C613BAE9-D4B7-4EA4-94E9-5D5E654D1001}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A1BC58A1-CAE6-483C-8E0E-B6E4F6BC676F} = {A1BC58A1-CAE6-483C-8E0E-B6E4F6BC676F}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
