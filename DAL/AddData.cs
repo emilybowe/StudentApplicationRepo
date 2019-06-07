@@ -9,7 +9,7 @@ namespace DAL
 {
     public class AddData:DAO
     {
-        public int AddNewStudent(string fname, string sname, string email, string phone, string adrs1, string adrs2, string city, string county, string level, string course)
+        public string AddNewStudent(string fname, string sname, string email, string phone, string adrs1, string adrs2, string city, string county, string level, string course)
         {
 
             // usp to insert student

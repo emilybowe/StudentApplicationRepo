@@ -8,7 +8,7 @@ namespace BIZ
 {
     public class Student:AddData
     {
-        public int StudentID { get; set; }
+        //public int StudentID { get; set; }
         public string FirstName { get; set; }
         public string Surname { get; set; }
         public string Email { get; set; }
@@ -35,9 +35,16 @@ namespace BIZ
 
         }
 
-        public void AddStudentToDB()
+        public string AddStudentToDB()
         {
-            AddNewStudent(FirstName, Surname, Email, Phone, AddressLine1, AddressLine2, City, County, Level, Course);
+            if (FirstName == "" || Surname == "")
+            {
+                return "n";
+            }
+            string count = AddNewStudent(FirstName, Surname, Email, Phone, AddressLine1, AddressLine2, City, County, Level, Course);
+
+            return count;
+
 
         }
 
