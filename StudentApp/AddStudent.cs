@@ -72,6 +72,46 @@ namespace StudentApp
             ss.Show();
         }
 
+        private void TxtEmail_Validating(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void TxtEmail_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtFn_Validating(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void TxtFn_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtSn_Validating(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void TxtSn_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtPhone_Validating(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void TxtPhone_Validated(object sender, EventArgs e)
+        {
+
+        }
+
         private void BtnBack_Click(object sender, EventArgs e)
         {
             this.Close();

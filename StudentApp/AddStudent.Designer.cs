@@ -178,6 +178,8 @@
             this.txtFn.Name = "txtFn";
             this.txtFn.Size = new System.Drawing.Size(159, 22);
             this.txtFn.TabIndex = 12;
+            this.txtFn.Validating += new System.ComponentModel.CancelEventHandler(this.TxtFn_Validating);
+            this.txtFn.Validated += new System.EventHandler(this.TxtFn_Validated);
             // 
             // txtSn
             // 
@@ -185,6 +187,8 @@
             this.txtSn.Name = "txtSn";
             this.txtSn.Size = new System.Drawing.Size(159, 22);
             this.txtSn.TabIndex = 13;
+            this.txtSn.Validating += new System.ComponentModel.CancelEventHandler(this.TxtSn_Validating);
+            this.txtSn.Validated += new System.EventHandler(this.TxtSn_Validated);
             // 
             // txtAd1
             // 
@@ -213,6 +217,8 @@
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(159, 22);
             this.txtPhone.TabIndex = 17;
+            this.txtPhone.Validating += new System.ComponentModel.CancelEventHandler(this.TxtPhone_Validating);
+            this.txtPhone.Validated += new System.EventHandler(this.TxtPhone_Validated);
             // 
             // txtEmail
             // 
@@ -220,6 +226,8 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(159, 22);
             this.txtEmail.TabIndex = 18;
+            this.txtEmail.Validating += new System.ComponentModel.CancelEventHandler(this.TxtEmail_Validating);
+            this.txtEmail.Validated += new System.EventHandler(this.TxtEmail_Validated);
             // 
             // btnAdd
             // 
