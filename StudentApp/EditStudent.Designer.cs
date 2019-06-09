@@ -39,15 +39,15 @@
             this.lblPhone = new System.Windows.Forms.Label();
             this.lblCourse = new System.Windows.Forms.Label();
             this.lblLevel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.txtFn = new System.Windows.Forms.TextBox();
+            this.txtSn = new System.Windows.Forms.TextBox();
+            this.txtAd1 = new System.Windows.Forms.TextBox();
+            this.txtAd2 = new System.Windows.Forms.TextBox();
+            this.txtCity = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
+            this.cboCounty = new System.Windows.Forms.ComboBox();
+            this.cboCourse = new System.Windows.Forms.ComboBox();
             this.rdoPostgrad = new System.Windows.Forms.RadioButton();
             this.rdoUndergrad = new System.Windows.Forms.RadioButton();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -163,70 +163,74 @@
             this.lblLevel.TabIndex = 10;
             this.lblLevel.Text = "Level";
             // 
-            // textBox1
+            // txtFn
             // 
-            this.textBox1.Location = new System.Drawing.Point(233, 77);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(159, 22);
-            this.textBox1.TabIndex = 11;
+            this.txtFn.Location = new System.Drawing.Point(233, 77);
+            this.txtFn.Name = "txtFn";
+            this.txtFn.Size = new System.Drawing.Size(159, 22);
+            this.txtFn.TabIndex = 11;
             // 
-            // textBox2
+            // txtSn
             // 
-            this.textBox2.Location = new System.Drawing.Point(233, 129);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(159, 22);
-            this.textBox2.TabIndex = 12;
+            this.txtSn.Location = new System.Drawing.Point(233, 129);
+            this.txtSn.Name = "txtSn";
+            this.txtSn.Size = new System.Drawing.Size(159, 22);
+            this.txtSn.TabIndex = 12;
             // 
-            // textBox3
+            // txtAd1
             // 
-            this.textBox3.Location = new System.Drawing.Point(233, 178);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(159, 22);
-            this.textBox3.TabIndex = 13;
+            this.txtAd1.Location = new System.Drawing.Point(233, 178);
+            this.txtAd1.Name = "txtAd1";
+            this.txtAd1.Size = new System.Drawing.Size(159, 22);
+            this.txtAd1.TabIndex = 13;
             // 
-            // textBox4
+            // txtAd2
             // 
-            this.textBox4.Location = new System.Drawing.Point(233, 233);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(159, 22);
-            this.textBox4.TabIndex = 14;
+            this.txtAd2.Location = new System.Drawing.Point(233, 233);
+            this.txtAd2.Name = "txtAd2";
+            this.txtAd2.Size = new System.Drawing.Size(159, 22);
+            this.txtAd2.TabIndex = 14;
             // 
-            // textBox5
+            // txtCity
             // 
-            this.textBox5.Location = new System.Drawing.Point(233, 285);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(159, 22);
-            this.textBox5.TabIndex = 15;
+            this.txtCity.Location = new System.Drawing.Point(233, 285);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(159, 22);
+            this.txtCity.TabIndex = 15;
             // 
-            // textBox6
+            // txtEmail
             // 
-            this.textBox6.Location = new System.Drawing.Point(602, 120);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(153, 22);
-            this.textBox6.TabIndex = 16;
+            this.txtEmail.Location = new System.Drawing.Point(602, 120);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(153, 22);
+            this.txtEmail.TabIndex = 16;
+            this.txtEmail.Validating += new System.ComponentModel.CancelEventHandler(this.TxtEmail_Validating);
+            this.txtEmail.Validated += new System.EventHandler(this.TxtEmail_Validated);
             // 
-            // textBox7
+            // txtPhone
             // 
-            this.textBox7.Location = new System.Drawing.Point(602, 178);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(153, 22);
-            this.textBox7.TabIndex = 17;
+            this.txtPhone.Location = new System.Drawing.Point(602, 178);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(153, 22);
+            this.txtPhone.TabIndex = 17;
+            this.txtPhone.Validating += new System.ComponentModel.CancelEventHandler(this.TxtPhone_Validating);
+            this.txtPhone.Validated += new System.EventHandler(this.TxtPhone_Validated);
             // 
-            // comboBox1
+            // cboCounty
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(233, 332);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(159, 24);
-            this.comboBox1.TabIndex = 18;
+            this.cboCounty.FormattingEnabled = true;
+            this.cboCounty.Location = new System.Drawing.Point(233, 332);
+            this.cboCounty.Name = "cboCounty";
+            this.cboCounty.Size = new System.Drawing.Size(159, 24);
+            this.cboCounty.TabIndex = 18;
             // 
-            // comboBox2
+            // cboCourse
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(602, 228);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(153, 24);
-            this.comboBox2.TabIndex = 19;
+            this.cboCourse.FormattingEnabled = true;
+            this.cboCourse.Location = new System.Drawing.Point(602, 228);
+            this.cboCourse.Name = "cboCourse";
+            this.cboCourse.Size = new System.Drawing.Size(153, 24);
+            this.cboCourse.TabIndex = 19;
             // 
             // rdoPostgrad
             // 
@@ -263,6 +267,7 @@
             this.btnAdd.TabIndex = 22;
             this.btnAdd.Text = "Save Student";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // EditStudent
             // 
@@ -272,15 +277,15 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.rdoUndergrad);
             this.Controls.Add(this.rdoPostgrad);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cboCourse);
+            this.Controls.Add(this.cboCounty);
+            this.Controls.Add(this.txtPhone);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtCity);
+            this.Controls.Add(this.txtAd2);
+            this.Controls.Add(this.txtAd1);
+            this.Controls.Add(this.txtSn);
+            this.Controls.Add(this.txtFn);
             this.Controls.Add(this.lblLevel);
             this.Controls.Add(this.lblCourse);
             this.Controls.Add(this.lblPhone);
@@ -294,6 +299,7 @@
             this.Controls.Add(this.label1);
             this.Name = "EditStudent";
             this.Text = "EditStudent";
+            this.Load += new System.EventHandler(this.EditStudent_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -312,15 +318,15 @@
         private System.Windows.Forms.Label lblPhone;
         private System.Windows.Forms.Label lblCourse;
         private System.Windows.Forms.Label lblLevel;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox txtFn;
+        private System.Windows.Forms.TextBox txtSn;
+        private System.Windows.Forms.TextBox txtAd1;
+        private System.Windows.Forms.TextBox txtAd2;
+        private System.Windows.Forms.TextBox txtCity;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtPhone;
+        private System.Windows.Forms.ComboBox cboCounty;
+        private System.Windows.Forms.ComboBox cboCourse;
         private System.Windows.Forms.RadioButton rdoPostgrad;
         private System.Windows.Forms.RadioButton rdoUndergrad;
         private System.Windows.Forms.Button btnAdd;

@@ -26,7 +26,8 @@ namespace DAL
             cmd.Parameters.AddWithValue("@county", county);
             cmd.Parameters.AddWithValue("@level", level);
             cmd.Parameters.AddWithValue("@course", course);
-            int count = cmd.ExecuteNonQuery();
+            string count = "";
+            count = cmd.ExecuteNonQuery().ToString();
             CloseCon();
             return count;
 

@@ -18,6 +18,7 @@ namespace StudentApp
             InitializeComponent();
         }
         ShowData sd = new ShowData();
+        public static string edID;
         private void ShowStudents_Load(object sender, EventArgs e)
         {
             UpdateGrid();
@@ -52,6 +53,54 @@ namespace StudentApp
         {
             AddStudent addStu = new StudentApp.AddStudent();
             addStu.Show();
+        }
+
+        private void LogoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void DeleteStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string delID = "";
+            if (dgvStudents.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Select Student to Delete", "Delete Student");
+            }
+            else
+            {
+                DialogResult result = MessageBox.Show("Are you sure?", "Delete Student", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                if (result == DialogResult.OK)
+                {
+                    delID = dgvStudents.SelectedRows[0].Cells[0].Value.ToString();
+                    DeleteData student = new DeleteData();
+                    int count = student.DeleteStudent(delID);
+                    MessageBox.Show("Student Deleted");
+
+                    UpdateGrid();
+                }
+            }
+        }
+
+        private void EditStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            edID = "";
+            if (dgvStudents.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Select Student to Edit", "Edit Student");
+            }
+            else
+            {
+                edID = dgvStudents.SelectedRows[0].Cells[0].Value.ToString();
+
+                EditStudent edStudent = new EditStudent();
+                edStudent.Show();
+            }
         }
     }
 }

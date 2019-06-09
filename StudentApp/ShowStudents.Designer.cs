@@ -76,14 +76,16 @@
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(139, 26);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.logoutToolStripMenuItem.Text = "Logout";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.LogoutToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(139, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
             // accountToolStripMenuItem
             // 
@@ -108,12 +110,14 @@
             this.editStudentToolStripMenuItem.Name = "editStudentToolStripMenuItem";
             this.editStudentToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
             this.editStudentToolStripMenuItem.Text = "Edit Student";
+            this.editStudentToolStripMenuItem.Click += new System.EventHandler(this.EditStudentToolStripMenuItem_Click);
             // 
             // deleteStudentToolStripMenuItem
             // 
             this.deleteStudentToolStripMenuItem.Name = "deleteStudentToolStripMenuItem";
             this.deleteStudentToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
             this.deleteStudentToolStripMenuItem.Text = "Delete Student";
+            this.deleteStudentToolStripMenuItem.Click += new System.EventHandler(this.DeleteStudentToolStripMenuItem_Click);
             // 
             // viewDatabaseHistoryToolStripMenuItem
             // 
