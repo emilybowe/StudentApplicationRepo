@@ -11,7 +11,7 @@ namespace DAL
     {
         public int UpdateStudent(string id, string fname, string sname, string email, string phone, string adrs1, string adrs2, string city, string county, string level, string course)
         {
-            // call stored procedure to update the database
+            // update db - usp
 
             SqlCommand cmd = new SqlCommand("uspUpDateStudent", OpenCon());
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
@@ -30,7 +30,6 @@ namespace DAL
             int count = cmd.ExecuteNonQuery();
             CloseCon();
             return count;
-
         }
     }
 }

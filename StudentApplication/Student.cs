@@ -32,7 +32,6 @@ namespace BIZ
             County = county;
             Level = level;
             Course = course;
-
         }
 
         public string AddStudentToDB()
@@ -44,7 +43,6 @@ namespace BIZ
             string count = AddNewStudent(FirstName, Surname, Email, Phone, AddressLine1, AddressLine2, City, County, Level, Course);
 
             return count;
-
 
         }
 

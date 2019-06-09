@@ -12,7 +12,7 @@ namespace DAL
         public string AddNewStudent(string fname, string sname, string email, string phone, string adrs1, string adrs2, string city, string county, string level, string course)
         {
 
-            // usp to insert student
+            // usp insert student
 
             SqlCommand cmd = new SqlCommand("uspAddStudent", OpenCon());
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
@@ -30,7 +30,6 @@ namespace DAL
             count = cmd.ExecuteNonQuery().ToString();
             CloseCon();
             return count;
-
         }
     }
 }

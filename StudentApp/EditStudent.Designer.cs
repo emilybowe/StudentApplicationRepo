@@ -167,6 +167,7 @@
             // 
             this.txtFn.Location = new System.Drawing.Point(233, 77);
             this.txtFn.Name = "txtFn";
+            this.txtFn.ReadOnly = true;
             this.txtFn.Size = new System.Drawing.Size(159, 22);
             this.txtFn.TabIndex = 11;
             // 
@@ -174,6 +175,7 @@
             // 
             this.txtSn.Location = new System.Drawing.Point(233, 129);
             this.txtSn.Name = "txtSn";
+            this.txtSn.ReadOnly = true;
             this.txtSn.Size = new System.Drawing.Size(159, 22);
             this.txtSn.TabIndex = 12;
             // 

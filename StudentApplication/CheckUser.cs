@@ -11,7 +11,7 @@ namespace BIZ
     {
         public bool VerifyUser(string user, string pass)
         {
-            CheckLogin c = new CheckLogin();    // check for a match
+            CheckLogin c = new CheckLogin();    // check match
             bool status = c.CheckUser(user, pass);
 
             return status;

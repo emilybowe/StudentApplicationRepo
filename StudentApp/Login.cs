@@ -32,7 +32,7 @@ namespace StudentApp
             {
 
                 
-                //show grid of all students before getting menu choice
+                //all student grid
                 ShowStudents ss = new ShowStudents();
                 ss.Show();
             }

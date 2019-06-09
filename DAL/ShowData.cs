@@ -17,8 +17,7 @@ namespace DAL
 
         public DataTable Read()
         {
-            // select all Students with usp
-
+            // select all Students - usp
 
             SqlCommand cmd = new SqlCommand("uspAllStudents", OpenCon());
             cmd.CommandType = CommandType.StoredProcedure;
@@ -26,7 +25,6 @@ namespace DAL
             da.Fill(dt);
             bs.DataSource = dt;
             return dt;
-
         }
     }
 }

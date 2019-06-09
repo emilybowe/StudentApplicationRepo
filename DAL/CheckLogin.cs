@@ -14,7 +14,6 @@ namespace DAL
             SqlDataReader dr = null;
             bool status = false;
 
-
             SqlCommand cmd = new SqlCommand("uspFindUser", OpenCon());
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@user", user);
@@ -27,7 +26,6 @@ namespace DAL
 
             CloseCon();
             return status;
-
 
         }
     }

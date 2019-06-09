@@ -27,7 +27,6 @@ namespace DAL
             return con;
         }
 
-
         public void CloseCon()
         {
             if (con != null)

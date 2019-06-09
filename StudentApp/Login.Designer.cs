@@ -54,6 +54,7 @@
             this.lblUser.Size = new System.Drawing.Size(73, 17);
             this.lblUser.TabIndex = 0;
             this.lblUser.Text = "Username";
+            this.lblUser.Visible = false;
             // 
             // lblPass
             // 
@@ -63,6 +64,7 @@
             this.lblPass.Size = new System.Drawing.Size(69, 17);
             this.lblPass.TabIndex = 1;
             this.lblPass.Text = "Password";
+            this.lblPass.Visible = false;
             // 
             // btnLogin
             // 
@@ -72,6 +74,7 @@
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Visible = false;
             this.btnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // txtUser
@@ -80,13 +83,16 @@
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(100, 22);
             this.txtUser.TabIndex = 3;
+            this.txtUser.Visible = false;
             // 
             // txtPass
             // 
             this.txtPass.Location = new System.Drawing.Point(318, 154);
             this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(100, 22);
             this.txtPass.TabIndex = 4;
+            this.txtPass.Visible = false;
             // 
             // menuStrip1
             // 
@@ -133,6 +139,7 @@
             this.accountToolStripMenuItem.Name = "accountToolStripMenuItem";
             this.accountToolStripMenuItem.Size = new System.Drawing.Size(77, 24);
             this.accountToolStripMenuItem.Text = "Account";
+            this.accountToolStripMenuItem.Visible = false;
             this.accountToolStripMenuItem.Click += new System.EventHandler(this.AccountToolStripMenuItem_Click);
             // 
             // logOutToolStripMenuItem
