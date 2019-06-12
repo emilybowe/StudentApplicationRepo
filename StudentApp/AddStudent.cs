@@ -65,11 +65,12 @@ namespace StudentApp
                 txtAd1.Clear();
                 txtAd2.Clear();
                 txtCity.Clear();
+            
+                MessageBox.Show("New Student Added");
+                this.Close();
+                ShowStudents ss = new ShowStudents();
+                ss.Show();
             }
-            MessageBox.Show("New Student Added");
-            this.Close();
-            ShowStudents ss = new ShowStudents();
-            ss.Show();
         }
 
         private void TxtEmail_Validating(object sender, CancelEventArgs e)
