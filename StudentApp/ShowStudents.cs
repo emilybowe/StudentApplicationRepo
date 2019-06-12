@@ -45,6 +45,7 @@ namespace StudentApp
 
         private void UpdateGrid()
         {
+            ShowData sd = new ShowData();
             dgvStudents.DataSource = sd.Read();
 
         }
