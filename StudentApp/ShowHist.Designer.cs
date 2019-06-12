@@ -39,14 +39,14 @@
             this.dgvStudents.Name = "dgvStudents";
             this.dgvStudents.RowHeadersWidth = 51;
             this.dgvStudents.RowTemplate.Height = 24;
-            this.dgvStudents.Size = new System.Drawing.Size(776, 319);
+            this.dgvStudents.Size = new System.Drawing.Size(1371, 549);
             this.dgvStudents.TabIndex = 0;
             // 
             // ShowHist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1385, 711);
             this.Controls.Add(this.dgvStudents);
             this.Name = "ShowHist";
             this.Text = "ShowHist";
