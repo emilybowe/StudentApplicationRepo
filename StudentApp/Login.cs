@@ -65,6 +65,11 @@ namespace StudentApp
             addStu.Show();
         }
 
+        private void ViewDatabaseHistoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
 
 
@@ -76,5 +81,7 @@ namespace StudentApp
         {
 
         }
+
+
     }
 }

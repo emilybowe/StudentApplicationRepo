@@ -118,14 +118,14 @@
             // loginToolStripMenuItem
             // 
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.loginToolStripMenuItem.Text = "Login";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.LoginToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // accountToolStripMenuItem
@@ -173,6 +173,7 @@
             this.viewDatabaseHistoryToolStripMenuItem.Name = "viewDatabaseHistoryToolStripMenuItem";
             this.viewDatabaseHistoryToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
             this.viewDatabaseHistoryToolStripMenuItem.Text = "View Database History";
+            this.viewDatabaseHistoryToolStripMenuItem.Click += new System.EventHandler(this.ViewDatabaseHistoryToolStripMenuItem_Click);
             // 
             // Login
             // 

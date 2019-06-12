@@ -103,5 +103,11 @@ namespace StudentApp
                 edStudent.Show();
             }
         }
+
+        private void ViewDatabaseHistoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowHist sh = new ShowHist();
+            sh.Show();
+        }
     }
 }
