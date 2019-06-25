@@ -20,6 +20,11 @@ namespace BIZ
         public string Level { get; set; }
         public string Course { get; set; }
 
+        public Student() //required for XML
+        {
+
+        }
+
         public Student(string fname, string sname, string email, string phone, string adrs1, string adrs2, string city, string county, string level, string course)
         {
             FirstName = fname;

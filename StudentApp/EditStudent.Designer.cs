@@ -51,6 +51,8 @@
             this.rdoPostgrad = new System.Windows.Forms.RadioButton();
             this.rdoUndergrad = new System.Windows.Forms.RadioButton();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.btnSerialise = new System.Windows.Forms.Button();
+            this.sfd = new System.Windows.Forms.SaveFileDialog();
             this.SuspendLayout();
             // 
             // label1
@@ -271,11 +273,24 @@
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
+            // btnSerialise
+            // 
+            this.btnSerialise.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnSerialise.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F);
+            this.btnSerialise.Location = new System.Drawing.Point(69, 390);
+            this.btnSerialise.Name = "btnSerialise";
+            this.btnSerialise.Size = new System.Drawing.Size(227, 39);
+            this.btnSerialise.TabIndex = 23;
+            this.btnSerialise.Text = "XML Serialisation";
+            this.btnSerialise.UseVisualStyleBackColor = false;
+            this.btnSerialise.Click += new System.EventHandler(this.BtnSerialise_Click);
+            // 
             // EditStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSerialise);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.rdoUndergrad);
             this.Controls.Add(this.rdoPostgrad);
@@ -332,5 +347,7 @@
         private System.Windows.Forms.RadioButton rdoPostgrad;
         private System.Windows.Forms.RadioButton rdoUndergrad;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnSerialise;
+        private System.Windows.Forms.SaveFileDialog sfd;
     }
 }

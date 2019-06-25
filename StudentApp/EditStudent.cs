@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using BIZ;
 using DAL;
 using System.Configuration;
+using System.Xml.Serialization;
+using System.Xml;
 
 namespace StudentApp
 {
@@ -107,6 +109,53 @@ namespace StudentApp
             ShowStudents ss = new ShowStudents();
             ss.Show();
         }
+        private void BtnSerialise_Click(object sender, EventArgs e)
+        {
+            string fname = txtFn.Text;
+            string sname = txtSn.Text;
+            string email = txtEmail.Text;
+
+            string phone = txtPhone.Text;
+
+            string adrs1 = txtAd1.Text;
+            string adrs2 = txtAd2.Text;
+            string city = txtCity.Text;
+
+            string county = cboCounty.SelectedItem.ToString();
+
+            string level = "Undergrad";
+            if (rdoPostgrad.Checked)
+            {
+                level = "Postgrad";
+            }
+
+            string course = cboCourse.Text.ToString();
+
+            Student student = new Student(fname, sname, email, phone, adrs1, adrs2, city, county, level, course);
+
+            XmlSerializer serialiser;
+            XmlWriter xmlWriter;
+            string filePath = string.Empty;
+
+            sfd.InitialDirectory = "C:\\";
+            sfd.Filter = "xml files (*.xml)|*.xml";
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                filePath = sfd.FileName;
+                serialiser = new XmlSerializer(typeof(Student));
+                xmlWriter = XmlWriter.Create(filePath);
+                serialiser.Serialize(xmlWriter, student);
+                MessageBox.Show("Details serialised");
+            }
+            else
+            {
+                MessageBox.Show("Unable to Serialise");
+            }
+
+        }
+    
+
+        
 
         private void TxtEmail_Validating(object sender, CancelEventArgs e)
         {
@@ -127,5 +176,7 @@ namespace StudentApp
         {
 
         }
+
+
     }
 }
