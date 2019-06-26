@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DAL;
+using BIZ;
 
 namespace StudentApp
 {
@@ -17,21 +18,22 @@ namespace StudentApp
         {
             InitializeComponent();
         }
-        CheckLogin c = new CheckLogin();
+        //CheckLogin c = new CheckLogin();
+        CheckUser c = new CheckUser(); //innovation 2 - password encryption
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
             string user = txtUser.Text;
             string pass = txtPass.Text;
-            bool status = c.CheckUser(user, pass);
+            bool status = c.VerifyUser(user, pass); //innovation 2 - password encryption
             if (!status)
             {
                 MessageBox.Show("Invalid Login");
             }
             else
             {
-
                 
+
                 //all student grid
                 ShowStudents ss = new ShowStudents();
                 ss.Show();
@@ -54,6 +56,7 @@ namespace StudentApp
             lblPass.Show();
             txtPass.Show();
             btnLogin.Show();
+            this.ActiveControl = txtUser;
         }
 
 
