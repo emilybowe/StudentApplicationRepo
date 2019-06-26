@@ -27,7 +27,7 @@ namespace DAL
             cmd.Parameters.AddWithValue("@level", level);
             cmd.Parameters.AddWithValue("@course", course);
             string count = "";
-            count = cmd.ExecuteNonQuery().ToString();
+            count = cmd.ExecuteScalar().ToString(); //scope ID - innovation
             CloseCon();
             return count;
         }

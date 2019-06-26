@@ -338,3 +338,6 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/SQL code - tables, triggers, stored procedures.sql
+/SQL code - tables, triggers, stored procedures.docx
+/Innovations made.docx

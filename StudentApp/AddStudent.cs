@@ -66,7 +66,7 @@ namespace StudentApp
                 txtAd2.Clear();
                 txtCity.Clear();
             
-                MessageBox.Show("New Student Added");
+                MessageBox.Show("New Student Id is: " + count, "New Student Added"); //scope ID - innovation
                 this.Close();
                 ShowStudents ss = new ShowStudents();
                 ss.Show();
