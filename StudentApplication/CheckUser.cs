@@ -15,8 +15,8 @@ namespace BIZ
             string passHash = PassHash(pass); //innovation 2 - encrypt the password
             CheckLogin c = new CheckLogin();    // check match
             bool status = c.CheckUser(user, passHash);
-
             
+
             return status;
             
         }
