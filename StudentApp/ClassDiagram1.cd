@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="StudentApp.AddStudent" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAYAyCACABABIACIBAACggAAgJBAAIQAgoIAAAA=</HashCode>
+      <FileName>AddStudent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudentApp.EditStudent" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACMEIYAySgCABABAAKJJAACAgADgJFAAIAAggIAAAA=</HashCode>
+      <FileName>EditStudent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudentApp.Login" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BUiAARAgACEEAFAAAACAEAACCAAAAgHACAAIAABAAAA=</HashCode>
+      <FileName>Login.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudentApp.Program" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudentApp.ShowHist" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAASAAAAAAAACAAAACAgAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>ShowHist.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudentApp.ShowStudents" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQCAAAAAACgEAEAAAACAFAACAgAAAgkAAAEIAAQIAAw=</HashCode>
+      <FileName>ShowStudents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudentApp.Properties.Resources" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudentApp.Properties.Settings" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="StudentApp.County" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAgEIIIAQAAAAQAABTAgAAAAQCAhQAIAgGAChFgCQg=</HashCode>
+      <FileName>County.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="StudentApp.Course" Collapsed="true">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAGIAAAAAAAAAAAAAAAAAAAAAAAAAQAAEAAA=</HashCode>
+      <FileName>Course.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
